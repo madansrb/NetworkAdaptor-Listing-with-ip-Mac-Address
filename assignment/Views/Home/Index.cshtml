@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model assignment.Models.CustomModel
+<div class="container">
+    <br />
+    <br />
+    <div class="col-md-4">
+        <h2>Adapter List</h2>
+        <br />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Adapter Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var a in Model.adapterlists)
+                {
+                    <tr>
+                        <td>@a.adaptername</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <br />
+    </div>
+
+    <div class="col-md-4">
+        <h2>IP Adress List</h2>
+        <br />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>IP Adress</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var i in Model.ipadresslists)
+                {
+                    <tr>
+                        <td>@i.ipadress</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <br />
+    </div>
+
+    <div class="col-md-4">
+        <h2>MAC  Adress List</h2>
+        <br />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>MACAdress</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var m in Model.macadresslists)
+                {
+                    <tr>
+                        <td>@m.macadress</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+       </div>
+    </div>

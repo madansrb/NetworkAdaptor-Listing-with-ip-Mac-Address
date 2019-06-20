@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+ 
+@model List<assignment.Models.adapterinformation>
+
+
+<div class="container">
+    <br />
+    <br />
+    <br />
+    @foreach (var deatils in Model)
+    {
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <b>Adapter Name :-</b><p>@deatils.networkadapter</p>
+                    <b>Ip Address :-</b><p>@deatils.ipaddress</p>
+                    <b>Mac Address :-</b><p>@deatils.macaddress</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
