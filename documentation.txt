@@ -1,0 +1,5 @@
+Introduction
+The AdapterInfo project is a simple C# .NET project that will report the "friendly" adapter name, the IP address assigned, and the physical (MAC) address for the user. This is helpful when an application needs to retrieve the MAC address for a certain IP address, or vice versa, when having only one piece of the puzzle. The project also demonstrates simple registry reads.
+
+Project highlights(algorithem logic)
+I found it advantageous to write this application because of the fact that the MAC address of a network adapter is not stored in an easy to get to location, such as the Registry. So,I needed a mechanism to connect the IP address of an adapter to the MAC address of it. Once the two are "matched", I then have the MAC address for my use. This is done by retrieving the "AdapterName" field form the IP_Adapter_Addresses data structure.
